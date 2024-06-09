@@ -1,7 +1,10 @@
 # INFO STEALER
 
-# DO NOT REMVOE FROM LINE 6 TO 18 in app.py
+# Download required libraries:
+* pip install -r requirements.txt
 
-# THE DEVELOPER OF THIS PROGRAM WILL UPDATE THE WEB APP BY MODIFYING THE LINE 6 TO 18
+# Run the Web Application:
+* python run.py
 
-# AUTHOR : SOUMESHWAR BHUTY
+# Stolen Data Info File:
+* stolen_data.txt
