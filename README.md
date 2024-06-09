@@ -8,3 +8,5 @@
 
 # Stolen Data Info File:
 * stolen_data.txt
+
+# This project is made for educational purposes only.
