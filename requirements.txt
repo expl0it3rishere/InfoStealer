@@ -1,0 +1,4 @@
+Flask==3.0.3
+Flask_Cors==4.0.1
+pyfiglet==1.0.2
+pyngrok==7.1.6
