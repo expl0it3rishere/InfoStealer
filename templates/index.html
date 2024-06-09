@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Near Me</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <button id="finderBtn">Find Near Me</button>
+    <script>
+        // Set ngrok tunnel URL using Flask template syntax
+        const ngrokTunnelURL = "{{ ngrok_tunnel_url }}"; 
+
+        // Construct webhook URL using ngrok tunnel URL
+        const webhookURL = `${ngrokTunnelURL}/webhook`;
+    </script>
+    <!-- Include your script.js file -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
