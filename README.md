@@ -9,7 +9,7 @@
 # Run the Web Application:
 * python run.py
 
-# Stolen Data Info File:
+# Stolen Data Information File:
 * stolen_data.txt
 
 # This project is made for educational purposes only.
