@@ -1,4 +1,4 @@
-#! [](Screenshot_2024_0610_111050.png)
+! [] (Screenshot_2024_0610_111050.png)
 # INFO STEALER
 
 # Download required libraries:
