@@ -1,5 +1,5 @@
 ![Screenshot](InfoStealer_logo.png)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/o5i6vuKvwzI?si=uuGmKZ8UucJNDCAq" frameborder="0" allowfullscreen></iframe>
+[![Video Screenshot](screenshot_image_url)](https://www.youtube.com/watch?v=o5i6vuKvwzI)
 
 # INFO STEALER
 
