@@ -1,5 +1,5 @@
 ![Screenshot](InfoStealer_logo.png)
-[![Video Thumbnail](https://example.com/video_thumbnail.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+[![Video Thumbnail](.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
 
 # INFO STEALER
 
