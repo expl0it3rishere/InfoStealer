@@ -1,4 +1,4 @@
-![Screenshot](Screenshot_2024_0610_111050.png)
+![Screenshot](InfoStealer_logo.png)
 # INFO STEALER
 
 # Download required libraries:
