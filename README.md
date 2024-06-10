@@ -1,5 +1,6 @@
 ![Screenshot](InfoStealer_logo.png)
-[!Video Thumbnail (thumbnail.png)](videourl)
+[![Video Thumbnail](https://example.com/video_thumbnail.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+
 # INFO STEALER
 
 # Download required libraries:
