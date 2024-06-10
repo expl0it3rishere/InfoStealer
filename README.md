@@ -1,4 +1,3 @@
-![Screenshot](InfoStealer_logo.png)
 [![Video Thumbnail](InfoStealer_logo.png)](https://www.youtube.com/watch?v=o5i6vuKvwzI)
 
 # INFO STEALER
