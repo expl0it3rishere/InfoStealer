@@ -66,6 +66,7 @@ def run_ngrok():
         # Connect ngrok with bind_tls and metadata to skip browser warning
         http_tunnel = ngrok.connect(addr="8080", bind_tls=True, metadata="ngrok-skip-browser-warning")
         print("[ ! ] HTTP TUNNEL: ", http_tunnel.public_url)
+        print("[ ! ] THE WEBSITE IS CURRENTLY RUNNING....")
         app.ngrok_tunnel_url = http_tunnel.public_url  # Store the ngrok tunnel URL in the Flask app instance
         
         while True:
